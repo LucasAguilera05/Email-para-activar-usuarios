@@ -1,0 +1,17 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Correo de prueba</title>
+</head>
+<body style="align-content: center">
+<h1> BIENVENIDO A MDS</h1>
+<p style="align-content: center"> Selecciona el link de abajo para confirmar el email</p>
+<p th:text="${message}">Mensaje</p>
+<p>
+    <a th:href="${verificationLink}" >Confirmar mi Correo Electrónico</a>
+</p>
+
+</body>
+</html>

@@ -6,6 +6,17 @@ public class emailDTO {
     private String asunto;
     private String mensaje;
     private Long codpers;
+    private String token;
+    private String nomb_usr;     // <--- clave para el flujo con token por usuario
+
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
+    }
 
     public String getNomb_usr() {
         return nomb_usr;
@@ -18,8 +29,6 @@ public class emailDTO {
     public Long getCodpers() {
         return codpers;
     }
-
-    private String nomb_usr;  // para link alternativo (PK)
 
     public Long getCodpers(emailDTO email) {
         return codpers;

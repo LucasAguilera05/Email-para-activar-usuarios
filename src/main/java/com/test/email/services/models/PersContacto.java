@@ -17,7 +17,6 @@ public class PersContacto {
     @Column(name = "correo2", length = 320)
     private String correo2;
 
-    // --- getters/setters ---
     public Long getCodpers() {
         return codpers;
     }

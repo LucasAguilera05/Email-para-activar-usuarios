@@ -6,6 +6,15 @@ public class emailDTO {
     private String asunto;
     private String mensaje;
     private Long codpers;
+    private String token;
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
+    }
 
     public String getNomb_usr() {
         return nomb_usr;

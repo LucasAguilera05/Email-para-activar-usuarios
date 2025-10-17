@@ -19,7 +19,6 @@ public class Usuario {
 
     // getters/setters...
 
-
     public String getNombUsr() {
         return nombUsr;
     }

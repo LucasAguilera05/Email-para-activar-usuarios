@@ -1,12 +1,23 @@
 package com.test.email.services.models;
 
 
+import java.time.LocalDateTime;
+
 public class emailDTO {
     private String destinatario;
     private String asunto;
     private String mensaje;
     private Long codpers;
     private String token;
+    private java.time.LocalDateTime FecExpira;
+
+    public LocalDateTime getFecExpira() {
+        return FecExpira;
+    }
+
+    public void setFecExpira(LocalDateTime fecExpira) {
+        FecExpira = fecExpira;
+    }
 
     public String getToken() {
         return token;
